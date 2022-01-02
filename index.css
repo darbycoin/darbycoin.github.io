@@ -23,6 +23,7 @@ body {
   background-color: #333;
   overflow: hidden;
   margin: 0;
+  text-align: center;
 }
 
 /* Style the links inside the navigation bar */
@@ -95,7 +96,7 @@ input[type=submit]:hover {
     
 }
 .restoPic{
-    width:800px;
+    width:825px;
     height:800px;
    
     margin-left: 200px;
