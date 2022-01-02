@@ -6,7 +6,7 @@ body {
     display: inline-block;
     font-size: 18px;
     background-size: 400%;
-    animation: bg-animation 15s infinite alternate;
+    animation: bg-animation 10s infinite alternate;
     
 }
 
