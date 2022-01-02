@@ -95,7 +95,7 @@ input[type=submit]:hover {
     
 }
 .restoPic{
-    width:825px;
+    width:800px;
     height:800px;
    
     margin-left: 200px;
@@ -103,6 +103,6 @@ input[type=submit]:hover {
 }
 .kijPic{
     height:650px;
-    width: 750px;
+    width: 700px;
     margin-left: 10px;
 }
