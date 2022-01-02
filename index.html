@@ -52,6 +52,29 @@
              
             
         }
+        :root {
+  --gradient: linear-gradient(45deg, #845ec2, #d63db2, #ff6f89, #ff8972,#ffc72f);
+}
+body {
+    background-image: var(--gradient);
+    display: inline-block;
+    
+    background-size: 400%;
+    animation: bg-animation 25s infinite alternate;
+    
+}
+.kids:hover{
+    background-position: right;
+}
+
+@keyframes bg-animation {
+    0% {
+        background-position: left;
+    }
+    100% {
+        background-position: right;
+    }
+}
 
     
     </style>
