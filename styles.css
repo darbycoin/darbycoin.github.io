@@ -1,0 +1,82 @@
+#sellerForm{
+        
+               margin: 0 auto;
+               margin-top: 5%;
+    padding: 20px;
+    width: 500px;  
+   
+    background-color: white;
+        }
+        .auctionDisplay{
+            text-align: center;
+        }
+        .auctionDisplay span{
+            text-decoration: underline;
+        }
+
+        #biddingForm{
+            column-count: 2;
+               margin: 0 auto;
+               margin-top: 5%;
+    padding: 20px;
+    width: 500px;     
+   
+    background-color: white;
+        }
+
+
+        form input{
+            
+            margin-bottom: 20px;
+        }
+        #top{
+            left:500px;
+        }
+        .errorMessage, #checkIfTooLow{
+            background-color: lightcoral;
+            font-size: 30px;
+            margin: 0 auto;
+            display: inline-block;
+           
+        }
+        
+        body{
+            background-color: lightblue;
+        }
+        #submitBtn{
+            background-color: #555555;
+          right:500px;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  
+        }
+        #biddingForm #submitBtn{
+            margin: 0 50px;
+        }
+        #submitBtn:hover{
+             background-color: #4CAF50; 
+  color: white;
+        }
+        #price{
+            font-size: 24px;
+        }
+        #list, #auctionDisplay{
+              margin: 0 auto;
+               margin-top: 5%;
+    padding: 20px;
+    width: 500px; 
+  background-color: white;
+ 
+        }
+        #list th{
+            text-decoration: underline;
+        }
+        #hidden{
+            display: none;
+        }
+       
