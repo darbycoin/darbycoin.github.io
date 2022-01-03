@@ -1,14 +1,46 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <link rel="stylesheet" href="index.css">
     <link rel="icon" type="image/x-icon" href="KDBig.jpg">
     <title>Kevin Darby - Full Stack Developer</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script>
+
+    function checkTime(){
+
     
+ var today = new Date();
+    var day = today.getDay();   
+    
+        var hour = today.getHours();
+        var minute = today.getMinutes();
+        var second = today.getSeconds();
+        
+
+       
+        if (hour > 7 ) {
+            showThing();
+        
+    }
+}
+checkTime();
+function showThing(){
+    
+    var basket = document.getElementById("bball");
+    basket.style.display = "block";
+}
+    
+  
+</script>
 </head>
+
 <body>
     <div class="topnav">
         <a href="#kijiji">Kijiji Clone</a>
@@ -16,46 +48,82 @@
         <a href="#contact">Contact</a>
         <a href="#about">About Me</a>
     </div>
- <div id="container">
-    <h1>Welcome to my site</h1>
-     <iframe frameborder=0 height=400px width=20% src="http://weakstreams.com/streams/9740460" allowfullscreen scrolling=no allowtransparency></iframe>
+    <div id="container">
+        <h1>Welcome to my site</h1>
 
 
-
-
-    <div id="kijiji"><h3 class="heading">Kijiji clone (HTML/CSS/PHP/JS)</h3>
-        <img class="kijPic" src="listpic.png">
-
-<img class="kijPic" src="biditempic.png">
-
-<img class="kijPic" src="postitempic.png">
-
-    </div>
-    <div id ="resto"><h3 class="heading">Los Pollos Hermanos Restaurant (HTML/CSS/JS)</h3>
-        <img class="restoPic" src="promopage.png">
+ <h3>Kijiji Clone</h3>
+<section id="kijiji"class="carousel" aria-label="Gallery">
+    <ol class="carousel__viewport">
+        <li id="carousel__slide1" tabindex="0"  class="carousel__slide">
+            <img src="listpic.png" class="caroPics">
+            <div class="carousel__snapper">
+                <a src="listpic.png" href="#carousel__slide4" class="carousel__prev">Go to last slide</a>
+                <a href="#carousel__slide2" class="carousel__next">Go to next slide</a>
+            </div>
+        </li>
+        <li id="carousel__slide2" tabindex="0" class="carousel__slide">
+            <img src="postitempic.png" class="caroPics">
+            <div class="carousel__snapper"></div>
+            <a href="#carousel__slide1" class="carousel__prev">Go to previous slide</a>
+            <a href="#carousel__slide3" class="carousel__next">Go to next slide</a>
+        </li>
+        <li id="carousel__slide3" tabindex="0" class="carousel__slide">
+            <img src="biditempic.png" class="caroPics">
+            <div class="carousel__snapper"></div>
+            <a href="#carousel__slide2" class="carousel__prev">Go to previous slide</a>
+            <a href="#carousel__slide4" class="carousel__next">Go to next slide</a>
+        </li>
+      
+    </ol>
+  
+</section>
+<h3>Los Pollos Hermanos Restaurant</h3>
+<section id="resto" class="carousel" aria-label="Gallery">
+    <ol class="carousel__viewport">
+        <li id="carousel2__slide1" tabindex="0" class="carousel__slide">
+            <img src="promopage.png" class="caroPics">
+            <div class="carousel__snapper">
+                <a src="listpic.png" href="#carousel2__slide4" class="carousel__prev">Go to last slide</a>
+                <a href="#carousel2__slide2" class="carousel__next">Go to next slide</a>
+            </div>
+        </li>
+        <li id="carousel2__slide2" tabindex="0" class="carousel__slide">
+            <img src="deliverypage.png" class="caroPics">
+            <div class="carousel__snapper"></div>
+            <a href="#carousel2__slide1" class="carousel__prev">Go to previous slide</a>
+            <a href="#carousel2__slide3" class="carousel__next">Go to next slide</a>
+        </li>
+      
         
-        <img class="restoPic" src="deliverypage.png">
-    </div>
+    </ol>
 
-
-    <div id="contact"><form>
-        <h3 class="heading">Contact me!</h3>
-    
-        <label for="fname">First Name</label>
-        <input type="text" id="fname" name="firstname" placeholder="Your name..">
-    
-        <label for="lname">Last Name</label>
-        <input type="text" id="lname" name="lastname" placeholder="Your last name..">
-    
-       
-    
-        <label for="message">Message</label>
-        <textarea id="message" name="message" placeholder="Write something.." style="height:200px"></textarea>
-    
-        <input type="submit" value="Submit">
-    
-    </form></div>
-    <div id="about"><h3 style="text-align: center;">I'm a full time computer science student, currently enrolled in the Full Stack Developer program at John Abbott College. Scheduled to graduate summer/fall 2022.</h3></div>
+</section>
     </div>
+        <div id="contact">
+            <form>
+                <h3 class="heading">Contact me!</h3>
+        
+                <label for="fname">First Name</label>
+                <input type="text" id="fname" name="firstname" placeholder="Your name..">
+        
+                <label for="lname">Last Name</label>
+                <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+        
+        
+        
+                <label for="message">Message</label>
+                <textarea id="message" name="message" placeholder="Write something.." style="height:200px"></textarea>
+        
+                <input type="submit" value="Submit">
+        
+            </form>
+        </div>
+        <div id="about">
+            <h3 style="text-align: center;">I'm a full time computer science student, currently enrolled in the Full Stack
+                Developer program at John Abbott College. Scheduled to graduate summer/fall 2022.</h3>
+        </div>
+        </div>
 </body>
+
 </html>
