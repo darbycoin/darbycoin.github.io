@@ -1,119 +1,4 @@
-        :root {
-  --gradient: linear-gradient(45deg, #845ec2, #d63db2, #ff6f89, #ff8972,#ffc72f);
-}
-body {
-    background-image: var(--gradient);
-    display: inline-block;
-    font-size: 18px;
-    background-size: 400%;
-    animation: bg-animation 15s infinite alternate;
-    
-}
-
-@keyframes bg-animation {
-    0% {
-        background-position: left;
-    }
-    100% {
-        background-position: right;
-    }
-}
-/* Add a black background color to the top navigation */
-.topnav {
-  background-color: #333;
-  overflow: hidden;
-  margin: 0;
-  text-align: center;
-}
-
-/* Style the links inside the navigation bar */
-.topnav a {
-  float: left;
-  color: #f2f2f2;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-  font-size: 17px;
-}
-
-/* Change the color of links on hover */
-.topnav a:hover {
-  background-color: #ddd;
-  color: black;
-}
-h1 {
-    text-align: center;
-}
-#resto,#kijiji,#about,#contact{
-    margin-bottom: 10px;
-}
-/* Style inputs with type="text", select elements and textareas */
-input[type=text], select, textarea {
-  width: 100%; /* Full width */
-  padding: 12px; /* Some padding */ 
-  border: 1px solid #ccc; /* Gray border */
-  border-radius: 4px; /* Rounded borders */
-  box-sizing: border-box; /* Make sure that padding and width stays in place */
-  margin-top: 6px; /* Add a top margin */
-  margin-bottom: 16px; /* Bottom margin */
-  resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
-}
-
-/* Style the submit button with a specific background color etc */
-input[type=submit] {
-  background-color: #04AA6D;
-  color: white;
-  padding: 12px 20px;
-  border: none;
-  border-radius: 4px;
-  cursor: pointer;
-}
-
-/* When moving the mouse over the submit button, add a darker green color */
-input[type=submit]:hover {
-  background-color: #45a049;
-}
-
-/* Add a background color and some padding around the form */
-.container {
-  border-radius: 5px;
-  background-color: #f2f2f2;
-  padding: 20px;
-}
-#contact{
-    width:20%;
-    text-align: center;
-    margin:40%;
-    float:none;
-}
-#resto {
-
-}
-.heading{
-    font-size: 24px;
-    text-align: center;
-    text-decoration: underline;
-    
-}
-.restoPic{
-    width:825px;
-    height:800px;
-   
-    margin-left: 200px;
-
-}
-.kijPic{
-    height:650px;
-    width: 700px;
-    margin-left: 10px;
-}
-#bball{
-  display: none;
-}
-#hidey{
-  display:block;
-}
-@keyframes tonext {
+        @keyframes tonext {
   75% {
     left: 0;
   }
@@ -344,4 +229,120 @@ ol, li {
 .caroPics{
   height: 100%;
   width: 100%;
+}
+
+:root {
+  --gradient: linear-gradient(45deg, #845ec2, #d63db2, #ff6f89, #ff8972,#ffc72f);
+}
+body {
+    background-image: var(--gradient);
+    display: inline-block;
+    font-size: 18px;
+    background-size: 400%;
+    animation: bg-animation 15s infinite alternate;
+    
+}
+
+@keyframes bg-animation {
+    0% {
+        background-position: left;
+    }
+    100% {
+        background-position: right;
+    }
+}
+/* Add a black background color to the top navigation */
+.topnav {
+  background-color: #333;
+  overflow: hidden;
+  margin: 0;
+  text-align: center;
+}
+
+/* Style the links inside the navigation bar */
+.topnav a {
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+/* Change the color of links on hover */
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+h1 {
+    text-align: center;
+}
+#resto,#kijiji,#about,#contact{
+    margin-bottom: 10px;
+}
+/* Style inputs with type="text", select elements and textareas */
+input[type=text], select, textarea {
+  width: 100%; /* Full width */
+  padding: 12px; /* Some padding */ 
+  border: 1px solid #ccc; /* Gray border */
+  border-radius: 4px; /* Rounded borders */
+  box-sizing: border-box; /* Make sure that padding and width stays in place */
+  margin-top: 6px; /* Add a top margin */
+  margin-bottom: 16px; /* Bottom margin */
+  resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
+}
+
+/* Style the submit button with a specific background color etc */
+input[type=submit] {
+  background-color: #04AA6D;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+/* When moving the mouse over the submit button, add a darker green color */
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+/* Add a background color and some padding around the form */
+.container {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+}
+#contact{
+    width:20%;
+    text-align: center;
+    margin:40%;
+    float:none;
+}
+#resto {
+
+}
+.heading{
+    font-size: 24px;
+    text-align: center;
+    text-decoration: underline;
+    
+}
+.restoPic{
+    width:825px;
+    height:800px;
+   
+    margin-left: 200px;
+
+}
+.kijPic{
+    height:650px;
+    width: 700px;
+    margin-left: 10px;
+}
+#bball{
+  display: none;
+}
+#hidey{
+  display:block;
 }
